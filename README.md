@@ -1,6 +1,6 @@
-<div align="center">
+<div align=center>
 
-  <img align="center" src="assets/Git-Logo.eps">
+<img src=/assets/Git-Logo.eps>
 
 </div>
 
@@ -18,7 +18,8 @@
     - [Add a commit](#add-a-commit)
     - [Show a commit](#show-a-commit)
     - [Add local changes to repository](#add-local-changes-to-repository)
-  - [Delete the file from](#delete-the-file-from)
+  - [Delete the file from project and stage the removal for commit](#delete-the-file-from-project-and-stage-the-removal-for-commit)
+  - [Change a existing file path and stage the move](#change-a-existing-file-path-and-stage-the-move)
   - [Branches](#branches)
     - [Create a new branch](#create-a-new-branch)
     - [Switch to another branch and check it out into your working directory](#switch-to-another-branch-and-check-it-out-into-your-working-directory)
@@ -31,16 +32,12 @@
     - [Discard all local changes](#discard-all-local-changes)
   - [Tags](#tags)
     - [Add a tag in current branch](#add-a-tag-in-current-branch)
-- [Errors](#errors)
-  - [Please use a personal access token instead](#Please-use-a-personal-access-token-instead)
 - [Readme in other languages](#readme-in-other-languages)
 - [Other tools and tips](#other-tools-and-tips)
-  - [Add co-author](#Add-co-author)
   - [Graph](#graph)
   - [GUI Clients](#gui-clients)
     - [What is a "GUI" for git?](#what-is-a-gui-for-git)
   - [Visual Studio Code: extensions](#visual-studio-code-extensions)
-- [References](#references)
 - [Contributors](#contributors)
 
 # Introduction to Git
@@ -50,23 +47,17 @@ Git is the main **version control system** used in the world. Version control is
 
 This provides many advantages like multiple people working on the same project asynchronously, testing changes to a system without having to worry about reverting to a previous state if necessary, compare changes in files, maintaining different versions of the same system on the same place but separate, keep a history of changes for future reference, among others.
 
-[Git Official page](https://git-scm.com/)
+[Official page](https://git-scm.com/)
 
 ## Instalation
 
 Debian/Ubuntu:
-```bash
-apt-get update
-```
+> `apt-get update`
 
-```bash
-apt-get install git
-```
+> `apt-get install git`
 
 Arch Linux:
-```bash
-pacman -S git
-```
+> `pacman -S git`
 
 [Other Distributions](https://git-scm.com/download/linux)
 
@@ -92,40 +83,27 @@ They let you upload code either publicly or on private repositories and integrat
 
 # Git commands
 
-<img align="center" src="assets/terminal.png">
-
-##
-```bash
-git config --list
-```
+<img align=center src=/assets/terminal.png>
 
 ## Start
 ### Clone a existing project
 
 Once you have the repository url you clone it (which will download its main/master branch) with:
-```bash
-git clone <repository-url>
-```
+> `git clone <repository-url>`
 
 This will create a folder with the repository name wherever you are. If you want to specify a path or a folder name, simply add it as a argument:
 
-```bash
-git clone <repository-url> /path/to/git_folder
-```
+> `git clone <repository-url> /path/to/git_folder`
 
 ### Create a git project from scratch
 
 Go to the directory with the project code (or an empty directory to start from zero) and run:
 
-```bash
-git init
-```
+> `git init`
 
 This will create a new project where all files and subfolders are
 
-```bash
-git remote set-url origin https://github.com/Cygnus-Software/intro-git.git
-```
+> `git remote set-url origin https://github.com/Cygnus-Software/intro-git.git`
 
 *Note:* The remote url is generally the https repository url with a `.git` at the end
 
@@ -135,101 +113,69 @@ git remote set-url origin https://github.com/Cygnus-Software/intro-git.git
 ---
 ## Commit Changes
 
-```bash
-git status
-```
+> `git status`
 
 ### Add a commit
 
-```bash
-git commit -m "Tittle commit example" -m "Commit description"
-```
+> `git commit -m "Tittle commit example" -m "Commit description"`
+
+Note: The second commit message (`-m` flag) is optional
 
 ### Show a commit
 
-```bash
-git show <tag_commit>
-```
+> `git show <tag-commit>`
 
 ### Add local changes to repository
 
-```bash
-git add
-```
+> `git add`
 
-## Delete the file from
+## Delete the file from project and stage the removal for commit
+
+> `git rm <name-file>`
+
+## Change a existing file path and stage the move
+
+> `git mv <existing-path> <new-path>`
 
 ## Branches
 
 ### Create a new branch
 
-```bash
-git branch <name_branch>
-```
+> `git branch <name-branch>`
 
 ### Switch to another branch and check it out into your working directory
 
-```bash
-git checkout <name_branch>
-```
+> `git checkout <name-branch>`
 
 ## Commit history
 
 ### Show all commits in the actual branch and all files
 
-```bash
-git log
-```
+> `git log`
 
 ### Show all changes for a specific file
 
-```bash
-git log -p <file>
-```
+> `git log -p <file>`
 
 ### Diff of what is changed but not staged
 
-```bash
-git diff
-```
+> `git diff`
 
 ### Commit your staged content as a new commit snapshot
 
-```bash
-git diff --staged
-```
+> `git diff --staged`
 
 ## Undo
 
 ### Discard all local changes
 
-```bash
-git reset --hard
-```
+> `git reset --hard <commit>`
 
 ## Tags
 
 ### Add a tag in current branch
 
-```bash
-git tag <tag-name>
-```
-
-# Errors
-## Please use a personal access token instead
-
-> [Get Token](https://docs.github.com/en/github/authenticating-to-github/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
-
-```bash
-[user@Cygnus Cygnus_intro_git]$ git push origin develop
-remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-fatal: unable to access 'https://github.com/Cygnus-Software/intro-git.git/': The requested URL returned error: 403
-```
-
-```bash
-git config --global --unset credential.helper
-```
+> `git tag <tag-name>`
 
 # Readme in other languages
 
@@ -240,14 +186,9 @@ git config --global --unset credential.helper
 
 # Other tools and tips
 
-## Add co author
-[How to add co-author](https://github.com/shirosweets/how-to-add-co-author)
-
 ## Graph
 
-```bash
-sudo apt install gitk
-```
+> `sudo apt install gitk`
 
 ## GUI Clients
 ### What is a "GUI" for git?
@@ -255,17 +196,10 @@ sudo apt install gitk
 https://git-scm.com/download/gui/linux
 
 ## Visual Studio Code: extensions
-> Pair programming
-[Live-Share](https://visualstudio.microsoft.com/es/services/live-share/)
 
 ---
 
-# References
-[Git Docs](https://git-scm.com/docs)
-[Authentication](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
-
 # Contributors
 
-<a href="https://github.com/Cygnus-Software/intro-git/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Cygnus-Software/intro-git"/>
-</a>
+
+TEST
