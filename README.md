@@ -1,6 +1,6 @@
-<div align=center>
+<div align="center">
 
-  <img align="center" src=/assets/Git-Logo.eps>
+  <img align="center" src="assets/Git-Logo.eps">
 
 </div>
 
@@ -32,7 +32,7 @@
   - [Tags](#tags)
     - [Add a tag in current branch](#add-a-tag-in-current-branch)
 - [Errors](#errors)
-  - [remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.](#remote:-Support-for-password-authentication-was-removed-on-August-13,-2021.-Please-use-a-personal-access-token-instead.)
+  - [Please use a personal access token instead](#Please-use-a-personal-access-token-instead)
 - [Readme in other languages](#readme-in-other-languages)
 - [Other tools and tips](#other-tools-and-tips)
   - [Add co-author](#Add-co-author)
@@ -50,7 +50,7 @@ Git is the main **version control system** used in the world. Version control is
 
 This provides many advantages like multiple people working on the same project asynchronously, testing changes to a system without having to worry about reverting to a previous state if necessary, compare changes in files, maintaining different versions of the same system on the same place but separate, keep a history of changes for future reference, among others.
 
-[Official page](https://git-scm.com/)
+[Git Official page](https://git-scm.com/)
 
 ## Instalation
 
@@ -92,7 +92,7 @@ They let you upload code either publicly or on private repositories and integrat
 
 # Git commands
 
-<img align="center" src=/assets/terminal.png>
+<img align="center" src="assets/terminal.png">
 
 ##
 ```bash
@@ -216,7 +216,7 @@ git tag <tag-name>
 ```
 
 # Errors
-## remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+## Please use a personal access token instead
 
 > [Get Token](https://docs.github.com/en/github/authenticating-to-github/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
 
