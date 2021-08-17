@@ -217,6 +217,9 @@ git tag <tag-name>
 
 # Errors
 ## remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+
+> [Get Token](https://docs.github.com/en/github/authenticating-to-github/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
+
 ```bash
 [user@Cygnus Cygnus_intro_git]$ git push origin develop
 remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
