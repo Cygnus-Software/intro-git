@@ -1,3 +1,5 @@
+&nbsp;
+
 <div align="center">
   <img align="center" src="assets/Git-logo.jpg" width="400">
 </div>
@@ -245,16 +247,16 @@ git config --global --unset credential.helper
 > Credits to [Tomomi Imura](https://linkedin.com/in/tomomi)
 
 ## Purr pull
-<img src="assets/Git Purr/purr_pull.png">
+<img src="assets/GitPurr/purr_pull.png">
 
 ## Purr Merge and rebase
-<img src="assets/Git Purr/purr_merge_rebase.png">
+<img src="assets/GitPurr/purr_merge_rebase.png">
 
 ## Purr push
-<img src="assets/Git Purr/purr_push.png">
+<img src="assets/GitPurr/purr_push.png">
 
 ## Purr log
-<img src="assets/Git Purr/purr_log.png">
+<img src="assets/GitPurr/purr_log.png">
 
 # Other tools and tips
 
