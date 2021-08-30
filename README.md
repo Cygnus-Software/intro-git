@@ -1,9 +1,10 @@
 <div align="center">
-
-  <img align="center" src="assets/Git-Logo.eps">
-
+  <img align="center" src="assets/Git-logo.jpg" width="400">
 </div>
 
+&nbsp;
+
+# Index
 - [Introduction to Git](#introduction-to-git)
   - [What is "Git"?](#what-is-git)
   - [Instalation](#instalation)
@@ -33,7 +34,11 @@
     - [Add a tag in current branch](#add-a-tag-in-current-branch)
 - [Errors](#errors)
   - [Please use a personal access token instead](#Please-use-a-personal-access-token-instead)
-- [Readme in other languages](#readme-in-other-languages)
+- [Git PURR!](#Git-PURR!)
+  - [Purr pull](#Purr-pull)
+  - [Purr Merge and rebase](#Purr-Merge-and-rebase)
+  - [Purr push](#Purr-push)
+  - [Purr log](#Purr-log)
 - [Other tools and tips](#other-tools-and-tips)
   - [Add co-author](#Add-co-author)
   - [Graph](#graph)
@@ -41,7 +46,10 @@
     - [What is a "GUI" for git?](#what-is-a-gui-for-git)
   - [Visual Studio Code: extensions](#visual-studio-code-extensions)
 - [References](#references)
+- [Readme in other languages](#readme-in-other-languages)
 - [Contributors](#contributors)
+
+&nbsp;
 
 # Introduction to Git
 ## What is "Git"?
@@ -92,9 +100,9 @@ They let you upload code either publicly or on private repositories and integrat
 
 # Git commands
 
-<img align="center" src="assets/terminal.png">
+## <img src="assets/terminal.png" width="20" height="20"> Configuration
 
-##
+### View config
 ```bash
 git config --list
 ```
@@ -231,12 +239,22 @@ fatal: unable to access 'https://github.com/Cygnus-Software/intro-git.git/': The
 git config --global --unset credential.helper
 ```
 
-# Readme in other languages
-
-[README ES](/README_ES.md)
-
-
 ---
+
+# Git PURR!
+> Credits to [Tomomi Imura](https://linkedin.com/in/tomomi)
+
+## Purr pull
+<img src="assets/Git Purr/purr_pull.png">
+
+## Purr Merge and rebase
+<img src="assets/Git Purr/purr_merge_rebase.png">
+
+## Purr push
+<img src="assets/Git Purr/purr_push.png">
+
+## Purr log
+<img src="assets/Git Purr/purr_log.png">
 
 # Other tools and tips
 
@@ -261,8 +279,14 @@ https://git-scm.com/download/gui/linux
 ---
 
 # References
-[Git Docs](https://git-scm.com/docs)
-[Authentication](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
+- [Git Docs](https://git-scm.com/docs)
+- [Authentication](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
+- [Git Lab Docs](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)
+- [GIT PURR! Git Commands Explained with Cats!](https://girliemac.com/blog/2017/12/26/git-purr/)
+
+# Readme in other languages
+
+[README ES](/README_ES.md)
 
 # Contributors
 
